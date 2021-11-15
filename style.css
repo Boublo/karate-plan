@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 header .logo {
   width: 10rem;
   height: auto;
 }
 
 header nav {
-  background-color: rgba(26, 167, 7, 0.589);
+  background-color: rgba(129, 127, 161, 0.596);
 }
 
 .picture_header {
@@ -25,6 +26,15 @@ header nav {
 
 .picture_header--title {
   text-align: center;
-  color: antiquewhite;
+  color: rgba(179, 179, 179, 0.829);
+  letter-spacing: .0em;
+  text-shadow: 2px 2px 0px #3d2d2d, 5px 4px 0px rgba(29, 133, 16, 0.15);
+  font-family: 'Bungee', cursive;
+}
+
+@media screen and (max-width: 650px) {
+  .picture_header {
+    background-position: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
