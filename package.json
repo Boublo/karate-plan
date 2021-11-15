@@ -1,0 +1,11 @@
+{
+  "name": "karate-plan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Boublo/karate-plan.git",
+  "author": "david chereau <david53940@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
