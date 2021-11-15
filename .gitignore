@@ -1,4 +1,2 @@
 #Ignored Node_modules
 /node_modules
-!bootstrap.min.js
-!bootstrap.min.css
