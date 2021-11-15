@@ -9,7 +9,7 @@ header nav {
 }
 
 .picture_header {
-  background: url(/sources/picture/Fond-header.jpg) no-repeat fixed;
+  background: url(sources/picture/Fond-header.jpg) no-repeat fixed;
   height: 40em;
   background-size: cover;
   display: -webkit-box;
