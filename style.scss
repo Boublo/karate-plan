@@ -1,6 +1,25 @@
+$title-color: antiquewhite;
+$nav-color: rgba(26, 167, 7, 0.589);
 header {
   .logo {
     width: 10rem;
     height: auto;
   }
+  nav {
+    background-color: $nav-color;
+  }
+}
+.picture_header {
+  background: url(/sources/picture/Fond-header.jpg);
+  height: 40em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+    &--title { 
+      text-align: center;
+      color: $title-color;
+    }
 }
