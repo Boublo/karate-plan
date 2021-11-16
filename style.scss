@@ -6,11 +6,14 @@ $shadow-title: rgb(61, 45, 45);
 $border-button-card: #665031;
 $text-button-card: rgba(243, 4, 4, 0.664);
 
-
+body {
+  border: 0;
+  margin: 0;
+}
 a {
   text-decoration: none;
 }
-
+// **************** Nav-bar and picture header****************
 header {
   .logo {
     width: 10rem;
