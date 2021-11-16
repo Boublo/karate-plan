@@ -3,6 +3,13 @@
 $title-color: rgba(255, 255, 255, 0.829);
 $nav-color: rgba(129, 127, 161, 0.596);
 $shadow-title: rgb(61, 45, 45);
+$border-button-card: #665031;
+$text-button-card: rgba(243, 4, 4, 0.664);
+
+
+a {
+  text-decoration: none;
+}
 
 header {
   .logo {
@@ -34,5 +41,42 @@ header {
 @media screen and (max-width:650px) {
   .picture_header {
     background-position:  center;
+  }
+}
+
+// *****************button card******************
+@mixin dash($array, $offset, $widht) {
+  stroke-dasharray: $array;
+  stroke-dashoffset: $offset;
+  stroke-width: $widht;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+
+
+  &:hover
+    &__rect {
+      @include dash(760,0 ,2px )
+    }
+
+  &__rect {
+    fill: transparent;
+    stroke: $border-button-card;
+    border-bottom: 5px solid $border-button-card;
+
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    @include dash(120 700,-250 ,8px )
+  }
+  &__text {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 32px;
+    letter-spacing: 4px;
+    color: $text-button-card;
+    top: -48px;
   }
 }

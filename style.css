@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+a {
+  text-decoration: none;
+}
+
 header .logo {
   width: 10rem;
   height: auto;
@@ -35,5 +39,41 @@ header nav {
   .picture_header {
     background-position: center;
   }
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.button:hover .button__rect {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 0;
+  stroke-width: 2px;
+}
+
+.button__rect {
+  fill: transparent;
+  stroke: #665031;
+  border-bottom: 5px solid #665031;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  stroke-dasharray: 120 700;
+  stroke-dashoffset: -250;
+  stroke-width: 8px;
+}
+
+.button__text {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 4px;
+  color: rgba(243, 4, 4, 0.664);
+  top: -48px;
 }
 /*# sourceMappingURL=style.css.map */
