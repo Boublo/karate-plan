@@ -5,6 +5,7 @@ $nav-color: rgba(129, 127, 161, 0.596);
 $shadow-title: rgb(61, 45, 45);
 $border-button-card: #665031;
 $text-button-card: rgba(243, 4, 4, 0.664);
+$promo: rgba(248, 163, 4, 0.801);
 
 body {
   border: 0;
@@ -46,8 +47,25 @@ header {
     background-position:  center;
   }
 }
+// **************************Carousel**********************
+.promo {
+  color: $promo;
+  font-weight: bold;
+  text-shadow: 2px 5px 10px black;
+  font-size: 25px;
+}
+.text-carousel-shop {
+  color: #372272;
+  font-weight: bold;
+  text-shadow: 2px 5px 10px black;
+}
+@media screen and (max-width:1183px) {
+  .list-shop {
+    display: none;
+  }
+}
 
-// *****************button card******************
+// *****************button card1******************
 @mixin dash($array, $offset, $widht) {
   stroke-dasharray: $array;
   stroke-dashoffset: $offset;
