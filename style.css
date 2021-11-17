@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 header .logo {
   width: 10rem;
   height: auto;
@@ -99,5 +103,103 @@ header nav {
   letter-spacing: 4px;
   color: rgba(243, 4, 4, 0.664);
   top: -48px;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 20rem;
+  margin-top: 35px;
+      grid-template-areas: "from lin ico" "from lin copi";
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 2fr 0.001fr 1fr;
+      grid-template-columns: 2fr 0.001fr 1fr;
+  background: rgba(53, 52, 66, 0.534);
+  color: rgba(7, 5, 3, 0.521);
+}
+
+footer div.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: copi;
+  background: url(sources/picture/logo-footer.png) no-repeat;
+  background-size: 20%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+footer nav.from {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: from;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.line {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: lin;
+  background: rgba(255, 255, 255, 0.493);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+footer div.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: ico;
+  margin-right: 20px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.452);
+}
+
+.icon-style {
+  color: rgba(255, 255, 255, 0.452);
 }
 /*# sourceMappingURL=style.css.map */
