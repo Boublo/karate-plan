@@ -9,6 +9,10 @@ $promo: rgba(248, 163, 4, 0.801);
 $footer-color: rgba(53, 52, 66, 0.534);
 $footer-line-color:rgba(255, 255, 255, 0.493);
 $color-a-footer: rgba(255, 255, 255, 0.452);
+$meta-color:rgba(0, 0, 255, 0.644);
+$twitter-color:rgb(32,155,240);
+$insta-color: rgb(220,49,111);
+$snap-color: rgb(247,244,0);
 
 body {
   border: 0;
@@ -114,12 +118,18 @@ footer {
   height: 20rem;
   margin-top: 35px;
   grid-template-areas: 
-  "from lin ico"
-  "from lin copi";
+  "title-footer from lin ico"
+  "title-footer from lin copi";
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 2fr 0.001fr 1fr;
+  grid-template-columns: 0.5fr 1fr 0.001fr 1fr;
   background: $footer-color;
   color: rgba(7, 5, 3, 0.521);
+    
+    .title-footer {
+      color: rgba(255, 255, 255, 0.582);
+      font-family: 'Bungee', cursive;
+      text-shadow: 5px 8px 15px rgba(0, 0, 0, 0.384);
+    }
   
     div.copy {
       display: flex;
@@ -139,6 +149,11 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-weight: bold;
+
+      a:hover {
+        color: whitesmoke;
+      }
     }
 
     div.line {
@@ -161,6 +176,38 @@ footer {
       color: $color-a-footer;
     }
 }
-.icon-style {
-  color: $color-a-footer;
+.meta {
+  &:hover {
+    color: $meta-color;
+  }
+  i {
+    color: $meta-color;
+  }
+}
+.snap {
+  &:hover {
+    color: $snap-color;
+  }
+  i {
+    color: $snap-color;
+  }
+}
+.twitter {
+  &:hover {
+    color: $twitter-color;
+  }
+  i {
+    color: $twitter-color;
+  }
+}
+.insta {
+  &:hover {
+    color: $insta-color;
+  }
+  i {
+    color: $insta-color;
+  }
+}
+.copy-title {
+  font-weight: bold;
 }
